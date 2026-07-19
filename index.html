@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Colorful Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(-45deg,#ff6ec4,#7873f5,#4facfe,#43e97b);
+    background-size:400% 400%;
+    animation:gradient 12s ease infinite;
+    color:#333;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+}
+
+.card{
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    animation:fadeUp 1s;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero{
+    text-align:center;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:8px solid #ff4fa1;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#7b1fa2;
+}
+
+.hero h2{
+    color:#ff4081;
+    margin:10px 0;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.9;
+}
+
+.title{
+    text-align:center;
+    color:#6a1b9a;
+    margin-bottom:25px;
+    font-size:34px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.box{
+    padding:25px;
+    border-radius:20px;
+    color:white;
+    text-align:center;
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.box span{
+    font-size:60px;
+}
+
+.box h3{
+    margin:15px 0;
+}
+
+.box p{
+    line-height:1.7;
+}
+
+.read{background:#ff5252;}
+.draw{background:#4caf50;}
+.dance{background:#ff9800;}
+.sing{background:#03a9f4;}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    color:white;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.s1{background:#e91e63;}
+.s2{background:#3f51b5;}
+.s3{background:#009688;}
+.s4{background:#ff9800;}
+.s5{background:#9c27b0;}
+.s6{background:#4caf50;}
+.s7{background:#2196f3;}
+
+.timeline{
+    display:grid;
+    gap:20px;
+}
+
+.item{
+    background:#f8f8f8;
+    border-left:8px solid #ff4081;
+    padding:20px;
+    border-radius:12px;
+}
+
+.item h3{
+    color:#6a1b9a;
+    margin-bottom:10px;
+}
+
+.dream{
+    text-align:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+}
+
+.dream h2{
+    color:#6a1b9a;
+    font-size:36px;
+}
+
+.dream p{
+    font-size:20px;
+    line-height:2;
+    margin-top:20px;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    padding:30px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- Hero -->
+<div class="card hero">
+
+<img src="https://via.placeholder.com/180"
+class="profile"
+alt="Profile Picture">
+
+<h1>🌸 My Portfolio 🌸</h1>
+
+<h2>Hello! I'm <span style="color:#ff4081;">Your Name</span></h2>
+
+<p>
+
+🎂 I am <b>10 years old</b> and studying in <b>5th Standard</b>.<br><br>
+
+🌍 I studied in <b>Singapore</b> from <b>Grade 1 to Grade 2</b>.
+From <b>Grade 3 onwards</b>, I have been studying in <b>Chennai, India</b>.
+
+</p>
+
+</div>
+
+<!-- About -->
+
+<div class="card">
+
+<h2 class="title">🙋 About Me</h2>
+
+<p style="font-size:20px;line-height:2;text-align:center;">
+
+I love learning new things every day.
+I enjoy creating simple games using
+<b>HTML, CSS, and JavaScript</b> with the help of ChatGPT.
+
+I like solving problems, being creative, and helping others.
+
+</p>
+
+</div>
+
+<!-- Hobbies -->
+
+<div class="card">
+
+<h2 class="title">🎨 My Hobbies</h2>
+
+<div class="grid">
+
+<div class="box read">
+<span>📚</span>
+<h3>Reading Books</h3>
+<p>I enjoy reading story books because they improve my imagination and knowledge.</p>
+</div>
+
+<div class="box draw">
+<span>🎨</span>
+<h3>Drawing</h3>
+<p>I love drawing beautiful pictures and colouring them with bright colours.</p>
+</div>
+
+<div class="box dance">
+<span>💃</span>
+<h3>Dancing</h3>
+<p>I am learning Bharatanatyam and enjoy expressing myself through dance.</p>
+</div>
+
+<div class="box sing">
+<span>🎤</span>
+<h3>Singing</h3>
+<p>I love singing songs, especially K-pop songs, and I am learning vocal music.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Skills -->
+
+<div class="card">
+
+<h2 class="title">💻 My Interests</h2>
+
+<div class="skills">
+
+<div class="skill s1">HTML</div>
+<div class="skill s2">CSS</div>
+<div class="skill s3">JavaScript</div>
+<div class="skill s4">Coding</div>
+<div class="skill s5">Game Development</div>
+<div class="skill s6">Silambam</div>
+<div class="skill s7">Creativity</div>
+
+</div>
+
+</div>
+
+<!-- Achievements -->
+
+<div class="card">
+
+<h2 class="title">🏆 My Achievements</h2>
+
+<div class="timeline">
+
+<div class="item">
+<h3>🥋 Silambam</h3>
+<p>
+I practice Silambam and have participated in a State Level Competition.
+I also participated in a World Record Event.
+</p>
+</div>
+
+<div class="item">
+<h3>💻 Coding</h3>
+<p>
+I created simple games using HTML, CSS, and JavaScript with the help of ChatGPT.
+</p>
+</div>
+
+<div class="item">
+<h3>🎵 Music & Dance</h3>
+<p>
+I am learning Bharatanatyam and also attending vocal music classes.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Dream -->
+
+<div class="card dream">
+
+<h2>👩‍⚕️ My Dream</h2>
+
+<p>
+
+My dream is to become a <b>Doctor</b>. ❤️<br><br>
+
+I want to help sick people,
+save lives,
+and make people healthy and happy.
+
+I believe that kindness,
+hard work,
+and learning every day
+will help me achieve my dream.
+
+<br><br>
+
+🌟 <b>"A caring doctor brings hope, healing, and happiness."</b>
+
+</p>
+
+</div>
+
+<!-- Quote -->
+
+<div class="card">
+
+<h2 class="title">❤️ My Favourite Quote</h2>
+
+<p style="font-size:22px;text-align:center;line-height:2;">
+
+"Dream big, work hard, be kind, and never give up."
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+✨ Thank You for Visiting My Portfolio ✨
+
+</footer>
+
+</body>
+</html>
